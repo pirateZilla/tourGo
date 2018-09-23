@@ -1,0 +1,27 @@
+<html>
+    <head>
+      <!--  <script src="insurance.js"></script>-->
+      <script>
+          function calculatePremium() {
+              var s = document.getElementsByName('age')[0];
+              var basePrice = s.options[s.selectedIndex].value;
+              console.log("The base price is €" + basePrice);
+          }
+      </script>
+    </head>
+    <body>
+        <form>            
+            <select name="age">
+                <option value="3200">18</option>
+                <option value="3000">19</option>
+                <option value="2800">20</option>
+                <option value="2600">21</option>
+                <option value="2400">22</option>
+                <option value="2200">23</option>
+                <option value="2000">24</option>
+                <option value="1800">25</option>
+            </select>
+            <input type = "button" onclick = "calculatePremium()" value = "Submit">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>PCP Calculator</title>
+    </head>
+    <body>
+        <h1>Insurance Calculator</h1>
+
+        <form action="" id="insuranceForm" onsubmit="return false;">
+                <fieldset>
+                        <legend>Calculate your monthly payment</legend>
+                        <input type="radio"  name="selectedAge" value="18"
+                        onclick="calculateTotal()" />
+                        18
+                        <input type="radio"  name="selectedAge" value="19"
+                        onclick="calculateTotal()" />
+                        19
+                        <input type="radio"  name="selectedAge" value="20"
+                        onclick="calculateTotal()" />
+                        20
+                        <input type="radio"  name="selectedAge" value="21"
+                        onclick="calculateTotal()" />
+                        21
+                        <input type="radio"  name="selectedAge" value="22"
+                        onclick="calculateTotal()" />
+                        22
+            
+                        <label>Experience</label>
+              
+                 <select id="car" name='model'
+                 onchange="calculateTotal()">
+                 <option value="One">1</option>
+                 <option value="Two">2</option>
+                 <option value="Three">3)</option>
+                 <option value="Four">4</option>
+                 <option value="Five">5</option>
+                </select>
+                 <br/>
+                 <p>
+                 <label for='full licence' class="inlinelabel">
+                 Full Licence</label>
+                 <input type="checkbox" id="fullLicence" name='fullLicence'
+                 onclick="calculateTotal()" />
+                </p>
+              
+                
+                <div id="totalPrice"></div>
+              
+                 </fieldset>
+             </form>
+             
+    </body>
+</html>
